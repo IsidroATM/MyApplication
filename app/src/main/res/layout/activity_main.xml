@@ -22,7 +22,7 @@
         android:id="@+id/btnShowMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me!!!"
+        android:text="Cambio de nombre de boton"
         app:layout_constraintBottom_toTopOf="@+id/tvMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
