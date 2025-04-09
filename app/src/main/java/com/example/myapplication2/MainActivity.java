@@ -23,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        Button btnShowMessage = findViewById(R.id.btnShowMessage);
+        //Button btnShowMessage = findViewById(R.id.btnShowMessage);
         Button btnChangeView = findViewById(R.id.btnchange);
+        Button btnChangeList = findViewById(R.id.btnShow2);
         TextView textMessage = findViewById(R.id.tvMessage);
 
         //btnShowMessage.setOnClickListener(new ShowMessageClickListener()); // Otra clase
@@ -37,17 +38,22 @@ public class MainActivity extends AppCompatActivity {
 //        }); // extens
         Contador cont = new Contador();
         //Lambda expression
-        btnShowMessage.setOnClickListener(v -> {
-            Log.i("MAIN_APP","Click en boton");
-            //textMessage.setText("Hola clase 2025-1");
-            contador = cont.contadorUp(contador);
-            textMessage.setText(String.valueOf(contador));
-
-
-        });
+//        btnShowMessage.setOnClickListener(v -> {
+//            Log.i("MAIN_APP","Click en boton");
+//            //textMessage.setText("Hola clase 2025-1");
+//            contador = cont.contadorUp(contador);
+//            textMessage.setText(String.valueOf(contador));
+//
+//
+//        });
 
         btnChangeView.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
+        });
+
+        btnChangeList.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
             startActivity(intent);
         });
 
