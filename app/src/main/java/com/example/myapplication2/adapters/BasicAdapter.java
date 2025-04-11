@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import  com.example.myapplication2.adapters.BasicAdapter;
 import com.example.myapplication2.adapters.PersonItem;
 

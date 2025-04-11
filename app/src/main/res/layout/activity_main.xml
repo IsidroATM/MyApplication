@@ -19,10 +19,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnShowMessage"
+        android:id="@+id/btnShow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me!!!"
+        android:text="Contactos"
         app:layout_constraintBottom_toTopOf="@+id/tvMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,8 +34,8 @@
         android:id="@+id/btnchange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Actividad2"
-        app:layout_constraintBottom_toTopOf="@+id/btnShowMessage"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/btnShow2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
