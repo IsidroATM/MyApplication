@@ -9,6 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.provider.CalendarContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         //Button btnShowMessage = findViewById(R.id.btnShowMessage);
         Button btnChangeView = findViewById(R.id.btnchange);
         Button btnChangeList = findViewById(R.id.btnShow2);
+        Button btnChangeListColor = findViewById(R.id.btnListColor);
         TextView textMessage = findViewById(R.id.tvMessage);
 
         //btnShowMessage.setOnClickListener(new ShowMessageClickListener()); // Otra clase
@@ -55,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
         btnChangeList.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
             startActivity(intent);
+        });
+
+        btnChangeListColor.setOnClickListener(v -> {
+                    Intent intent = new Intent(MainActivity.this, ColorsActivity.class);
+                    startActivity(intent);
         });
 
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

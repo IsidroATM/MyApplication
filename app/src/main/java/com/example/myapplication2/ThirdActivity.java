@@ -10,8 +10,9 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication2.adapters.BasicAdapter;
-import com.example.myapplication2.adapters.PersonItem;
+
+import com.example.myapplication2.S2Adapters.BasicAdapter;
+import com.example.myapplication2.S2Adapters.PersonItem;
 
 import java.util.ArrayList;
 import java.util.List;
