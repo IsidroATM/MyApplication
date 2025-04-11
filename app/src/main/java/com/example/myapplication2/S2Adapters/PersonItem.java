@@ -1,4 +1,4 @@
-package com.example.myapplication2.adapters;
+package com.example.myapplication2.S2Adapters;
 
 public class PersonItem {
     private String name;
